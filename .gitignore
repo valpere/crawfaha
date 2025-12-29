@@ -1,37 +1,28 @@
-!Build/
-.last_cover_stats
-/META.yml
-/META.json
-/MYMETA.*
-*.o
-*.pm.tdy
-*.bs
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# Devel::Cover
-cover_db/
+# Test binary, built with `go test -c`
+*.test
 
-# Devel::NYTProf
-nytprof.out
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
 
-# Dist::Zilla
-/.build/
+# Dependency directories (remove the comment below to include it)
+# vendor/
 
-# Module::Build
-_build/
-Build
-Build.bat
+# Go workspace file
+go.work
+go.work.sum
 
-# Module::Install
-inc/
+# env file
+.env
 
-# ExtUtils::MakeMaker
-/blib/
-/_eumm/
-/*.gz
-/Makefile
-/Makefile.old
-/MANIFEST.bak
-/pm_to_blib
-/*.zip
-
-crawfaha.json
+build
+wrk/
